@@ -1,0 +1,1 @@
+To run, write docker-compose up

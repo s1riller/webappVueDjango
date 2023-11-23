@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local development settings
+local_settings.py
+
+.idea
+
+# Static files
+/static/
+
+# Media files
+/media/
+
+# Virtual environment
+venv/
+env/
+
+# Compiled Python files
+*.pyc
+
+# Logs
+*.log
+
+# Ignore coverage files
+.coverage
+htmlcov/
+
+# Ignore secret key files
+*.key
+
+# Ignore environment file
+.env
+
+# Ignore pipenv virtual environment
+Pipfile.lock
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Visual Studio Code settings
+.vscode/
