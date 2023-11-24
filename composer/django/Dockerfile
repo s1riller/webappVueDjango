@@ -14,4 +14,4 @@ RUN pip install -U pip \
     pip install -r requirements.txt
 
 # Замените следующие две строки на команду, которую вы хотите запустить
-CMD ["python", "manage.py", "runserver", "0.0.0.0:7000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
