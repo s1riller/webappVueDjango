@@ -146,11 +146,11 @@ REST_FRAMEWORK = {
 
 }
 
-DJOSER = {
-    'SERIALIZERS': {
-        'user': 'api.serializers.UserSerializer',
-    }
-}
+# DJOSER = {
+#     'SERIALIZERS': {
+#         'user': 'api.serializers.UserSerializer',
+#     }
+# }
 
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -164,3 +164,7 @@ EMAIL_HOST_PASSWORD = 'buhoibegrmvjohoq'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 SERVER_EMAIL = EMAIL_HOST_USER
 EMAIL_ADMIN = EMAIL_HOST_USER
+
+
+APP_BACKEND_DOMAIN = 'http://127.0.0.1:8000/'
+APP_FRONTEND_DOMAIN = 'http://192.168.0.14:8080/'

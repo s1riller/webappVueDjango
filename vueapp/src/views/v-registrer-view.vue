@@ -80,7 +80,7 @@ export default {
   methods: {
     async register() {
       try {
-        const response = await axios.post(`${APP_BACKEND_DOMAIN}/api/auth/users/`, {
+        const response = await axios.post(`${APP_BACKEND_DOMAIN}/api/registeruser/`, {
           email: this.email,
           password: this.password,
         });
@@ -88,7 +88,7 @@ export default {
         console.log('Registration successful:', response.data);
 
         // Set success message
-        this.successMessage = `Успешная регистрация, добро пожаловать ${response.data.email}!`;
+        this.successMessage = `Письмо с кодом подтверждения отправлена на почту ${response.data.email}!`;
         this.email = '';
         this.password = '';
         // Optionally, you can redirect the user to a new page or perform other actions after successful registration.
